@@ -1,0 +1,9 @@
+In order for the database connection to be established and the code to run successfuly
+perform the following operations:
+
+    1. Substitute the placeholders in the "./config.php" to ensure the connection with the database 
+
+    2. In your SQL DMBC your database is running execute the 
+    "./script.sql" in this directory to create the database with the required columns for the controllers
+    to run errorless.  
+

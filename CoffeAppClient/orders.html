@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/custom.css">
+    <link rel="stylesheet" href="./assets/styles/modals.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <img src="./assets/images/app-logo.png" >
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="orders.html">Orders</a></li>
+        </ul>
+    </nav>
+
+    <h2>All Orders</h2>
+
+    <table id="ordersTbl">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <div class="header-container">
+                <h5>Edit Order</h5>
+                <span id="closeEditModalSpn" class="close">&times;</span>
+            </div>
+            
+            <form id="orderForm">
+                <div>
+                    <label for="fullName">Full name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Your name">
+                    <span id="fullNameSpn"></span>
+                </div>
+        
+                <div>
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address">
+                    <span id="emailSpn"></span>
+                </div>
+        
+                <div>
+                    <label for="description">Describe your order</label>
+                    <textarea id="description" name="description"></textarea>
+                    <span id="descriptionSpn"></span>
+                </div>
+        
+                <div>
+                    <button id="submitBtn">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  
+    <div id="removeModal" class="modal">
+        <div class="modal-content">
+            <h2 id="remove-fullname"></h2>
+            <p>Are you sure you want to remove this order?</p>
+            <p>
+                <button type="button" id="cancelRemoveBtn">Cancel</button>
+                <button type="button" id="confirmBtn">Confirm</button>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy; <span id="currentYear"></span> Coffee Shop. All rights reserved.</span>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/scripts/orders.js"></script>
+</body>
+</html>

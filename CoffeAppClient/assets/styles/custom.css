@@ -1,0 +1,155 @@
+/* START: Navigation Bar */
+nav {
+    background-color: #967259;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 50px;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #f4f4f4;
+    color: #967259;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* END: Navigation Bar */
+
+/* START: Footer */
+footer{
+    background-color: #f4f4f4;
+    text-align: center;
+    position:absolute;
+    padding: 20px;
+    width: 100%;
+    bottom: 0;
+}
+/* END: Footer */
+
+/* START: Home Page */
+div.homeDiv{
+    padding-bottom: 70px;
+    padding-left: 40px;
+}
+/* END: Home page */
+
+
+/* START: Order Page */
+
+form#orderForm{
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+}
+
+form#orderForm label,
+form#orderForm input,
+form#orderForm span,
+form#orderForm textarea {
+    width: 100%;
+    padding: 10px 5px;
+}
+
+form#orderForm label {
+    font-weight: bold;
+}
+
+form#orderForm input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form#orderForm button {
+    background-color: #967259;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form#orderForm button:hover {
+    background-color: green;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+form#orderForm span{
+    color: red;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+form#orderForm div{
+    margin-bottom: 20px;
+}
+
+
+/* END: Order Page */
+
+
+/* Start: Order content */
+table#ordersTbl{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+table#ordersTbl td, table#ordersTbl th{
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+table#ordersTbl th{
+    background-color: #f2f2f2;
+}
+
+
+table#ordersTbl tr:nth-child(even){background-color: #f2f2f2;}
+
+
+button#editBtn, button#removeBtn {
+    margin: 2px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+ 
+  button#editBtn {
+    background-color: #007BFF;
+    color: white;
+  }
+ 
+  button#removeBtn {
+    background-color: #FF0000;
+    color: white;
+  }
+ 
+
+
+/* End: Order content */
